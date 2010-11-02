@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{CEBB4C25-ECD6-4FE2-A4C5-61C65ED6556D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{42A36771-E837-403D-A83F-0D960B66400A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{54C7C683-8E75-42FA-B502-0ECCBF2BA26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{34AE7276-8931-4876-9DB6-26FA0E5E0B89}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34AE7276-8931-4876-9DB6-26FA0E5E0B89}.Debug|x86.ActiveCfg = Debug|x86
+		{34AE7276-8931-4876-9DB6-26FA0E5E0B89}.Debug|x86.Build.0 = Debug|x86
+		{34AE7276-8931-4876-9DB6-26FA0E5E0B89}.Release|x86.ActiveCfg = Release|x86
+		{34AE7276-8931-4876-9DB6-26FA0E5E0B89}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34AE7276-8931-4876-9DB6-26FA0E5E0B89} = {CEBB4C25-ECD6-4FE2-A4C5-61C65ED6556D}
+	EndGlobalSection
+EndGlobal
