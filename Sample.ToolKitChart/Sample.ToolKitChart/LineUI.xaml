@@ -1,0 +1,57 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" xmlns:Sample_ToolKitChart_ViewModels="clr-namespace:Sample_ToolKitChart.ViewModels" x:Class="Sample_ToolKitChart.LineUI"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+	<UserControl.Resources>
+		<Sample_ToolKitChart_ViewModels:LineViewModel x:Key="LineViewModelDataSource" d:IsDataSource="True"/>
+	</UserControl.Resources>
+	<UserControl.DataContext>
+		<Binding Source="{StaticResource LineViewModelDataSource}"/>
+	</UserControl.DataContext>
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <toolkit:Chart x:Name="chartLine">
+        	<toolkit:LineSeries
+        		Title="Information 01"
+        		DependentValueBinding="{Binding Value}" 
+        		IndependentValueBinding="{Binding Key}" ItemsSource="{Binding Informations01}"/>
+            <toolkit:LineSeries
+        		Title="Information 02"
+        		DependentValueBinding="{Binding Value}" 
+        		IndependentValueBinding="{Binding Key}" ItemsSource="{Binding Informations02}"/>
+            <toolkit:LineSeries
+            	Title="TwoWins"
+            	DependentValueBinding="{Binding Value}" 
+            	IndependentValueBinding="{Binding Key}" ItemsSource="{Binding TwoWins}"/>
+				<toolkit:Chart.Axes>
+                <toolkit:DateTimeAxis Orientation="X" Location="Bottom">
+                    <toolkit:DateTimeAxis.AxisLabelStyle>
+                        <Style TargetType="toolkit:AxisLabel">
+                            <Setter Property="StringFormat">
+                                <Setter.Value>{0:t}</Setter.Value>
+                            </Setter>
+                        </Style>
+                    </toolkit:DateTimeAxis.AxisLabelStyle>
+                </toolkit:DateTimeAxis>
+                <toolkit:LinearAxis
+                   Orientation="Y"
+                   Location="Left"
+                   Title="POT"
+                   Minimum="0"
+                   Maximum="12000"
+                   Interval="1000"
+                   ShowGridLines="True" />
+                <toolkit:LinearAxis
+                   Orientation="X"
+                   Location="Bottom"
+                   Title="Time"
+                   ShowGridLines="True" />
+            </toolkit:Chart.Axes>
+        </toolkit:Chart>
+    </Grid>
+</UserControl>

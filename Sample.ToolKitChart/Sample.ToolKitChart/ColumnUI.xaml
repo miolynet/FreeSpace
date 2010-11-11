@@ -1,0 +1,23 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Sample_ToolKitChart_ViewModels="clr-namespace:Sample_ToolKitChart.ViewModels" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" x:Class="Sample_ToolKitChart.ColumnUI"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+	<UserControl.Resources>
+		<Sample_ToolKitChart_ViewModels:ColumnViewModel x:Key="ColumnViewModelDataSource" d:IsDataSource="True"/>
+	</UserControl.Resources>
+	
+    <Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource ColumnViewModelDataSource}}">
+    	<ScrollViewer>
+    		<toolkit:Chart Title="Chart Title" >
+    			<toolkit:ColumnSeries ItemsSource="{Binding Points01}" Title="{Binding Name01}" DependentValuePath="X" IndependentValuePath="Y" d:IsHidden="True" />
+    			<toolkit:ColumnSeries ItemsSource="{Binding Points02}" Title="{Binding Name02}" DependentValuePath="X" IndependentValuePath="Y" d:IsHidden="True" />
+    			<toolkit:ColumnSeries ItemsSource="{Binding TwoWins}" Title="TwoWins" DependentValuePath="X" IndependentValuePath="Y" />
+    		</toolkit:Chart>
+    	</ScrollViewer>
+
+    </Grid>
+</UserControl>

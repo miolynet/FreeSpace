@@ -1,0 +1,42 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" 
+             x:Class="Sample_ToolKitChart.Line02UI"
+             d:DesignHeight="300" d:DesignWidth="400" mc:Ignorable="d">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <toolkit:Chart x:Name="myChart" Title="Prints per month">
+
+            <toolkit:LineSeries
+                   ItemsSource="{Binding}"
+                   Title="Printer 1"
+                   DependentValueBinding="{Binding Pages}"
+                   IndependentValueBinding="{Binding Month}" />
+            <toolkit:LineSeries
+                   ItemsSource="{Binding}"
+                   Title="Printer 2"
+                   DependentValueBinding="{Binding Pages}"
+                   IndependentValueBinding="{Binding Month}" />
+
+            <toolkit:Chart.Axes>
+                <toolkit:DateTimeAxis Orientation="X" Location="Bottom">
+                    <toolkit:DateTimeAxis.AxisLabelStyle>
+                        <Style TargetType="toolkit:AxisLabel">
+                            <Setter Property="StringFormat" Value="{}{0:MMM yy}" />
+                        </Style>
+                    </toolkit:DateTimeAxis.AxisLabelStyle>
+                </toolkit:DateTimeAxis>
+                <toolkit:LinearAxis
+                   Orientation="Y"
+                   Location="Left"
+                   Title="Pages printed"
+                   Minimum="0"
+                   Maximum="400"
+                   Interval="50"
+                   ShowGridLines="True" />
+            </toolkit:Chart.Axes>
+        </toolkit:Chart>
+    </Grid>
+</UserControl>

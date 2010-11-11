@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.ToolKitChart", "Sample.ToolKitChart\Sample.ToolKitChart.csproj", "{ae5cf36e-5b49-4c3d-b5ed-2aa19b48a312}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE5CF36E-5B49-4C3D-B5ED-2AA19B48A312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5CF36E-5B49-4C3D-B5ED-2AA19B48A312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5CF36E-5B49-4C3D-B5ED-2AA19B48A312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5CF36E-5B49-4C3D-B5ED-2AA19B48A312}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
