@@ -137,4 +137,12 @@
   <ItemGroup>
     <BuildContributorArgument Include="OutDir=$(OutDir)" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Employee.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\SomeTableOrView.EmployeePrimaryKeyConstraint.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+  </ItemGroup>
 </Project>
