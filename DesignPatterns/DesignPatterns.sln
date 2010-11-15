@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{169A8B2F-C8EB-48E9-9A24-D6A8B5428B54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Command", "Command\Command.csproj", "{DA3AC40C-46AB-4AD7-BFE7-18181792AE27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,6 +27,10 @@ Global
 		{169A8B2F-C8EB-48E9-9A24-D6A8B5428B54}.Debug|x86.Build.0 = Debug|x86
 		{169A8B2F-C8EB-48E9-9A24-D6A8B5428B54}.Release|x86.ActiveCfg = Release|x86
 		{169A8B2F-C8EB-48E9-9A24-D6A8B5428B54}.Release|x86.Build.0 = Release|x86
+		{DA3AC40C-46AB-4AD7-BFE7-18181792AE27}.Debug|x86.ActiveCfg = Debug|x86
+		{DA3AC40C-46AB-4AD7-BFE7-18181792AE27}.Debug|x86.Build.0 = Debug|x86
+		{DA3AC40C-46AB-4AD7-BFE7-18181792AE27}.Release|x86.ActiveCfg = Release|x86
+		{DA3AC40C-46AB-4AD7-BFE7-18181792AE27}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{34AE7276-8931-4876-9DB6-26FA0E5E0B89} = {CEBB4C25-ECD6-4FE2-A4C5-61C65ED6556D}
 		{169A8B2F-C8EB-48E9-9A24-D6A8B5428B54} = {42A36771-E837-403D-A83F-0D960B66400A}
+		{DA3AC40C-46AB-4AD7-BFE7-18181792AE27} = {54C7C683-8E75-42FA-B502-0ECCBF2BA26B}
 	EndGlobalSection
 EndGlobal
